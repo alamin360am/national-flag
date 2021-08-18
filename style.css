@@ -1,0 +1,367 @@
+/* Font input */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+/* Basic Setup */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* Keyfrems */
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+        background-color: #006a4e;
+    }
+
+    50% {
+        transform: translateY(10px);
+        background-color: rgba(0, 106, 78, 0.8);
+    }
+
+    100% {
+        transform: translateY(0);
+        background-color: #006a4e;
+    }
+}
+
+@keyframes song {
+    0% {
+    transform: translateY(300px);
+    }
+
+    100% {
+    transform: translateY(-400px);
+    }
+}
+
+/* Flag Desigh */
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flag {
+    display: flex;
+    position: relative;
+    height: 180px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.flag::before {
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    top: 20%;
+    left: 25%;
+    background-color: #f42a41;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.stand {
+    position: relative;
+    background: linear-gradient(
+                to right,
+                #f18904,
+                #f3cd05,
+                #FFD409
+                );
+    height:550px;
+    width: 15px;
+    margin-top: 40px;
+}
+
+.stand::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(
+                to left,
+                #8a2c02,
+                #d75404,
+                #f08b33
+                );
+    height: 20px;
+    width: 15px;
+    top: -20px;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+}
+.stand::after {
+    content: '';
+    position: absolute;
+    background: radial-gradient(
+                #d75404 30%,
+                #8a2c02
+                );
+    height: 60px;
+    width: 60px;
+    left: -22px;
+    bottom: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Wave Design */
+.flag .wave {
+    width: 5px;
+    height: 100%;
+    animation: wave 5s ease infinite;
+}
+
+.flag .wave:nth-child(50n+1) {
+    animation-delay: 0.1s;
+}
+.flag .wave:nth-child(50n+2) {
+    animation-delay: 0.2s;
+}
+.flag .wave:nth-child(50n+3) {
+    animation-delay: 0.3s;
+}
+.flag .wave:nth-child(50n+4) {
+    animation-delay: 0.4s;
+}
+.flag .wave:nth-child(50n+5) {
+    animation-delay: 0.5s;
+}
+.flag .wave:nth-child(50n+6) {
+    animation-delay: 0.6s;
+}
+.flag .wave:nth-child(50n+7) {
+    animation-delay: 0.7s;
+}
+.flag .wave:nth-child(50n+8) {
+    animation-delay: 0.8s;
+}
+.flag .wave:nth-child(50n+9) {
+    animation-delay: 0.9s;
+}
+.flag .wave:nth-child(50n+10) {
+    animation-delay: 1s;
+}
+.flag .wave:nth-child(50n+11) {
+    animation-delay: 1.1s;
+}
+.flag .wave:nth-child(50n+12) {
+    animation-delay: 1.2s;
+}
+.flag .wave:nth-child(50n+13) {
+    animation-delay: 1.3s;
+}
+.flag .wave:nth-child(50n+14) {
+    animation-delay: 1.4s;
+}
+.flag .wave:nth-child(50n+15) {
+    animation-delay: 1.5s;
+}
+.flag .wave:nth-child(50n+16) {
+    animation-delay: 1.6s;
+}
+.flag .wave:nth-child(50n+17) {
+    animation-delay: 1.7s;
+}
+.flag .wave:nth-child(50n+18) {
+    animation-delay: 1.8s;
+}
+.flag .wave:nth-child(50n+19) {
+    animation-delay: 1.9s;
+}
+.flag .wave:nth-child(50n+20) {
+    animation-delay: 2s;
+}
+.flag .wave:nth-child(50n+21) {
+    animation-delay: 2.1s;
+}
+.flag .wave:nth-child(50n+22) {
+    animation-delay: 2.2s;
+}
+.flag .wave:nth-child(50n+23) {
+    animation-delay: 2.3s;
+}
+.flag .wave:nth-child(50n+24) {
+    animation-delay: 2.4s;
+}
+.flag .wave:nth-child(50n+25) {
+    animation-delay: 2.5s;
+}
+.flag .wave:nth-child(50n+26) {
+    animation-delay: 2.6s;
+}
+.flag .wave:nth-child(50n+27) {
+    animation-delay: 2.7s;
+}
+.flag .wave:nth-child(50n+28) {
+    animation-delay: 2.8s;
+}
+.flag .wave:nth-child(50n+29) {
+    animation-delay: 2.9s;
+}
+.flag .wave:nth-child(50n+30) {
+    animation-delay: 3s;
+}
+ .flag .wave:nth-child(50n+31) {
+    animation-delay: 3.1s;
+}
+.flag .wave:nth-child(50n+32) {
+    animation-delay: 3.2s;
+}
+.flag .wave:nth-child(50n+33) {
+    animation-delay: 3.3s;
+}
+.flag .wave:nth-child(50n+34) {
+    animation-delay: 3.4s;
+}
+.flag .wave:nth-child(50n+35) {
+    animation-delay: 3.5s;
+}
+.flag .wave:nth-child(50n+36) {
+    animation-delay: 3.6s;
+}
+.flag .wave:nth-child(50n+37) {
+    animation-delay: 3.7s;
+}
+.flag .wave:nth-child(50n+38) {
+    animation-delay: 3.8s;
+}
+.flag .wave:nth-child(50n+39) {
+    animation-delay: 3.9s;
+}
+.flag .wave:nth-child(50n+40) {
+    animation-delay: 4s;
+}
+.flag .wave:nth-child(50n+41) {
+    animation-delay: 4.1s;
+}
+.flag .wave:nth-child(50n+42) {
+    animation-delay: 4.2s;
+}
+.flag .wave:nth-child(50n+43) {
+    animation-delay: 4.3s;
+}
+.flag .wave:nth-child(50n+44) {
+    animation-delay: 4.4s;
+}
+.flag .wave:nth-child(50n+45) {
+    animation-delay: 4.5s;
+}
+.flag .wave:nth-child(50n+46) {
+    animation-delay: 4.6s;
+}
+.flag .wave:nth-child(50n+47) {
+    animation-delay: 4.7s;
+}
+.flag .wave:nth-child(50n+48) {
+    animation-delay: 4.8s;
+}
+.flag .wave:nth-child(50n+49) {
+    animation-delay: 4.9s;
+}
+.flag .wave:nth-child(50n+50) {
+    animation-delay: 5s;
+}
+
+/* National Song */
+
+.national-song {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin-left: 10px;
+    box-shadow: 10px 20px 40px rgba(0, 106, 78, 0.1);
+    overflow: hidden;
+    align-self: center;
+}
+
+.national-song p {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    text-align: center;
+    animation: song 20s linear infinite;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    .flag {
+        height: 120px;
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .flag::before {
+        height: 80px;
+        width: 80px;
+    }
+
+    .stand {
+        height:450px;
+        width: 12px;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+
+    .stand::before {
+        height: 15px;
+        width: 12px;
+        top: -10px;
+    }
+    .stand::after {
+        height: 50px;
+        width: 50px;
+        left: -20px;
+    }
+
+    .national-song {
+        width: 250px;
+        height: 200px;
+        margin-top: 50px;
+    }
+    
+    .national-song p {
+        font-size: 10px;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: translateY(0);
+            background-color: #006a4e;
+        }
+    
+        50% {
+            transform: translateY(5px);
+            background-color: rgba(0, 106, 78, 0.8);
+        }
+    
+        100% {
+            transform: translateY(0);
+            background-color: #006a4e;
+        }
+    }
+    
+    @keyframes song {
+        0% {
+        transform: translateY(200px);
+        }
+    
+        100% {
+        transform: translateY(-250px);
+        }
+    }
+}
